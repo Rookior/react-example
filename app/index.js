@@ -1,21 +1,21 @@
 import React from 'react'
 import { render } from 'react-dom';
 import { AppContainer} from 'react-hot-loader';
-import Hello from './components/hello'
+import Main from './components/main'
 //console.log(react.version);
 render(
     <AppContainer>
-        <Hello />
+        <Main />
     </AppContainer>,
     document.getElementById('root')
 );
 
 if (module.hot) {
-    module.hot.accept('./components/hello', () => {
-        const NewHello = require('./components/hello').default;
+    module.hot.accept('./components/main', () => {
+        const NewMain = require('./components/main').default;
         render(
             <AppContainer>
-                <NewHello />
+                <NewMain />
             </AppContainer>,
             document.getElementById('root')
         );
