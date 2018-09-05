@@ -10,7 +10,7 @@ import List from './List.js'
 import Form from './Form.js'
 import LiftingStateUp from './LiftingStateUp.js'
 import WelcomeDialog from './WelcomeDialog.js'
-
+import GamePlay from './GamePlay.js'
 
 import './main.less'
 
@@ -30,6 +30,7 @@ class Main extends React.Component {
 			<Form />
 			<LiftingStateUp />
 			<WelcomeDialog />
+			<GamePlay />
 		</div>
 	);
   }
